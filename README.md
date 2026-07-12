@@ -1,29 +1,43 @@
-# DQB2 Kairo Bashii
+# Website
 
-ドラゴンクエストビルダーズ2（DQB2）の回路・ギミックをまとめるサイトです。
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-ゲーム内で作成した回路を、画像や動画を交えながら、できるだけ分かりやすく紹介・解説していきます。
+## Installation
 
-## コンテンツ
+```bash
+npm install
+```
 
-- [水車ワンショット回路](./Suisya-OneShot.md)
-- [水車ステップ循環回路](./Suisya-StepLoop.md)
+**Note**: feel free to use the package manager of your choice.
 
-※今後も新しい回路やギミックを随時追加予定です。
+## Local Development
 
-## このサイトについて
+```bash
+npm run start
+```
 
-このサイトでは、
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-- 回路の仕組み
-- 作り方
-- 動作原理
-- 応用例
+## Build
 
-を、できるだけ分かりやすくまとめていきます。
+```bash
+npm run build
+```
 
-初心者の方から、回路を研究したい方まで役立つサイトを目指しています。
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
----
+## Deployment
 
-作成：ばっしー
+Using SSH:
+
+```bash
+USE_SSH=true npm run deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> npm run deploy
+```
+
+If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

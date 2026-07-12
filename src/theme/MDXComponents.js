@@ -1,8 +1,7 @@
-import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
-import Twitter from '@site/src/components/Twitter';
+import TweetEmbed from '@site/src/components/Tweet';
 
 export default {
   ...MDXComponents,
-  Twitter,
+  Tweet: TweetEmbed,
 };

@@ -37,4 +37,4 @@
 
 ## 動画
 
-<TwitterTweetEmbed tweetId="2076273865056284738" />
+<Twitter tweetId="2076273865056284738" />

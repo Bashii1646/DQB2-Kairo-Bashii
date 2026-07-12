@@ -37,4 +37,4 @@
 
 ## 動画
 
-https://x.com/Bashii1646/status/2076273865056284738
+<TwitterTweetEmbed tweetId="2076273865056284738" />

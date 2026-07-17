@@ -1,23 +1,118 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
+.hero {
+  padding: 4.5rem 1rem 3.5rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      var(--ifm-color-primary-lightest),
+      var(--ifm-background-color) 65%
+    );
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+.heroText {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.mainContent {
+  max-width: 1100px;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.category {
+  margin-bottom: 3.5rem;
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 7%);
+}
+
+.categoryHeader {
+  margin-bottom: 1.5rem;
+}
+
+.categoryHeader h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.8rem;
+}
+
+.categoryHeader p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.articleCard {
+  display: flex;
+  min-height: 92px;
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--ifm-font-color-base);
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.articleCard:hover {
+  color: white;
+  text-decoration: none;
+  background: var(--ifm-color-primary);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 15%);
+  transform: translateY(-3px);
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .articleGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .mainContent {
+    padding-top: 1.5rem;
+  }
+
+  .category {
+    padding: 1.25rem;
+  }
+
+  .articleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .articleCard {
+    min-height: 70px;
+  }
 }

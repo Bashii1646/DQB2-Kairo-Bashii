@@ -1,0 +1,41 @@
+.tweetSection {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1.25rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+}
+
+.tweetLabel {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.tweetCard {
+  display: flex;
+  justify-content: center;
+}
+
+/* Xカードの横幅 */
+.tweetCard :global(.react-tweet-theme) {
+  width: 100%;
+  max-width: 550px;
+  margin: 0;
+}
+
+/* 引用された投稿を非表示 */
+.tweetCard :global([class*='quotedTweet']) {
+  display: none !important;
+}
+
+/* 引用部分を囲うリンクごと非表示にする候補 */
+.tweetCard :global(a[class*='quoted']) {
+  display: none !important;
+}
+
+.tweetCard :global(article article) {
+  display: none !important;
+}

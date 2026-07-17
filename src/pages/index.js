@@ -2,37 +2,122 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import styles from './index.module.css';
+
+const suisyaPages = [
+  {
+    title: '水車ワンショット回路',
+    to: '/suisya-one-shot',
+  },
+  {
+    title: '水車ステップ循環回路',
+    to: '/suisya-step-loop',
+  },
+  {
+    title: '13.25秒周期の水車クロック回路',
+    to: '/suisya-1325s-clock',
+  },
+  {
+    title: '11.7秒周期の水車クロック回路',
+    to: '/suisya-117s-clock',
+  },
+  {
+    title: '水と毒水のAND NOT回路',
+    to: '/suisya-water-poison-and-not',
+  },
+  {
+    title: '滝の優先順位',
+    to: '/suisya-waterfall-priority',
+  },
+  {
+    title: '水車の縦方向の動作時間',
+    to: '/suisya-vertical-delay',
+  },
+];
+
+const magumaPages = [
+  {
+    title: 'マグマエリアの判定',
+    to: '/maguma-area-judgment',
+  },
+  {
+    title: 'マグマとマグマエリアの仕様',
+    to: '/maguma-area-behavior',
+  },
+  {
+    title: 'マグマエリアのON/OFFスイッチ',
+    to: '/maguma-area-switch',
+  },
+  {
+    title: 'マグマエリアの応用',
+    to: '/maguma-area-application',
+  },
+  {
+    title: 'マグマエリアと水車のギミック',
+    to: '/maguma-area-waterwheel',
+  },
+];
+
+function ArticleCard({title, to}) {
+  return (
+    <Link className={styles.articleCard} to={to}>
+      {title}
+    </Link>
+  );
+}
+
+function CategorySection({title, description, pages}) {
+  return (
+    <section className={styles.category}>
+      <div className={styles.categoryHeader}>
+        <Heading as="h2">{title}</Heading>
+        <p>{description}</p>
+      </div>
+
+      <div className={styles.articleGrid}>
+        {pages.map((page) => (
+          <ArticleCard
+            key={page.to}
+            title={page.title}
+            to={page.to}
+          />
+        ))}
+      </div>
+    </section>
+  );
+}
 
 export default function Home() {
   return (
     <Layout
       title="DQB2 Kairo Bashii"
       description="ドラゴンクエストビルダーズ2の回路・ギミック集">
+
       <main>
-        <div
-          style={{
-            padding: '5rem 1rem',
-            textAlign: 'center',
-          }}>
-          <Heading as="h1">DQB2 Kairo Bashii</Heading>
+        <header className={styles.hero}>
+          <div className="container">
+            <Heading as="h1">DQB2 Kairo Bashii</Heading>
 
-          <p>
-            ドラゴンクエストビルダーズ2の
-            <br />
-            回路・ギミックをまとめるサイトです。
-          </p>
+            <p className={styles.heroText}>
+              ドラゴンクエストビルダーズ2の
+              <br />
+              回路・ギミックをまとめるサイトです。
+            </p>
+          </div>
+        </header>
 
-          <Link
-            className="button button--primary button--lg"
-            to="/suisya-one-shot">
-            水車ワンショット回路
-          </Link>
+        <div className={`container ${styles.mainContent}`}>
+          <CategorySection
+            title="水車"
+            description="水車や水・毒水の性質を利用した回路と検証です。"
+            pages={suisyaPages}
+          />
 
-          <Link
-            className="button button--primary button--lg"
-            to="/suisya-step-loop">
-            水車ステップ循環回路
-          </Link>
+          <CategorySection
+            title="マグマ"
+            description="マグマやマグマエリアに関するギミックと検証です。"
+            pages={magumaPages}
+          />
         </div>
       </main>
     </Layout>

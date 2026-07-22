@@ -6,12 +6,40 @@ import styles from './index.module.css';
 
 const suisyaPages = [
   {
+    title: 'シンプルな保持回路',
+    to: '/suisya-simple-latch',
+  },
+  {
+    title: '液体の保持判定',
+    to: '/suisya-liquid-hold-priority',
+  },
+  {
+    title: 'ワンショット保持・リセット回路',
+    to: '/suisya-one-shot-latch',
+  },
+  {
+    title: '保持出力継続・ワンショット出力回路',
+    to: '/suisya-latch-output',
+  },
+  {
+    title: '2進数の繰り上げ機構',
+    to: '/suisya-binary-carry',
+  },
+  {
     title: '水車ワンショット回路',
     to: '/suisya-one-shot',
   },
   {
     title: '水車ステップ循環回路',
     to: '/suisya-step-loop',
+  },
+  {
+    title: '段階選択回路',
+    to: '/suisya-step-selector',
+  },
+  {
+    title: '水流段階停止回路',
+    to: '/suisya-step-stop',
   },
   {
     title: '13.25秒周期の水車クロック回路',
@@ -34,7 +62,6 @@ const suisyaPages = [
     to: '/suisya-vertical-delay',
   },
 ];
-
 const magumaPages = [
   {
     title: 'マグマエリアの判定',
@@ -43,6 +70,10 @@ const magumaPages = [
   {
     title: 'マグマとマグマエリアの仕様',
     to: '/maguma-area-behavior',
+  },
+  {
+    title: 'マグネブロックを利用した回路の土台',
+    to: '/maguma-magnet-foundation',
   },
   {
     title: 'マグマエリアのON/OFFスイッチ',

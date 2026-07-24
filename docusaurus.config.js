@@ -4,13 +4,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DQB2 Kairo Bashii',
-  tagline: 'ドラゴンクエストビルダーズ2 回路・ギミック集',
-  favicon: 'img/favicon.ico',
-
-  future: {
-    v4: true,
-  },
+  title: 'ドラゴンクエストビルダーズ2 回路資料館',
+  tagline: '水車・液体・マグマの検証と回路資料',
+  favicon: 'img/logo.svg',
 
   url: 'https://bashii1646.github.io',
   baseUrl: '/DQB2-Kairo-Bashii/',
@@ -48,19 +44,21 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/social-card.svg',
+
       colorMode: {
         respectPrefersColorScheme: true,
       },
 
       navbar: {
-        title: 'DQB2 Kairo Bashii',
+        title: 'ドラゴンクエストビルダーズ2 回路資料館',
 
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '回路一覧',
+            label: '記事一覧',
           },
           {
             href: 'https://github.com/Bashii1646/DQB2-Kairo-Bashii',
@@ -83,7 +81,7 @@ const config = {
             title: 'コンテンツ',
             items: [
               {
-                label: '回路一覧',
+                label: '記事一覧',
                 to: '/',
               },
             ],
@@ -103,7 +101,7 @@ const config = {
           },
         ],
 
-        copyright: `Copyright © ${new Date().getFullYear()} ばっしー`,
+        copyright: `ドラゴンクエストビルダーズ2 回路資料館｜Copyright © ${new Date().getFullYear()} ばっしー`,
       },
 
       prism: {

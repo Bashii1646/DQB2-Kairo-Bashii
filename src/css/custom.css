@@ -1,30 +1,4 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
+:root{--ifm-color-primary:#1478b8;--ifm-color-primary-dark:#126ca6;--ifm-color-primary-darker:#11669d;--ifm-color-primary-darkest:#0e5481;--ifm-color-primary-light:#1784ca;--ifm-color-primary-lighter:#1d8bd2;--ifm-color-primary-lightest:#3c9dde;--ifm-font-family-base:'Noto Sans JP','Yu Gothic UI','Yu Gothic',sans-serif;--ifm-heading-font-family:var(--ifm-font-family-base);--ifm-heading-font-weight:850;--ifm-navbar-height:4.25rem;--ifm-global-radius:12px;--ifm-background-color:#f7fafc;--docusaurus-highlighted-code-line-bg:rgba(22,119,184,.1)}
+[data-theme='dark']{--ifm-color-primary:#62cfff;--ifm-color-primary-dark:#45c7ff;--ifm-color-primary-darker:#37c3ff;--ifm-color-primary-darkest:#09acf8;--ifm-color-primary-light:#7fd7ff;--ifm-color-primary-lighter:#8ddaff;--ifm-color-primary-lightest:#b8e9ff;--ifm-background-color:#0b1220;--ifm-background-surface-color:#111b2d;--ifm-card-background-color:#111b2d;--docusaurus-highlighted-code-line-bg:rgba(92,200,255,.15)}
+.navbar{box-shadow:0 1px 0 var(--ifm-color-emphasis-200);backdrop-filter:saturate(160%) blur(14px)}.navbar__title{font-weight:950;letter-spacing:-.025em}.navbar__logo{height:2.1rem}.navbar__item{font-weight:750}.footer{border-top:1px solid rgba(255,255,255,.08)}.footer__title{font-weight:900}.footer__copyright{opacity:.8}
+.theme-doc-markdown{font-size:1.02rem;line-height:1.95}.theme-doc-markdown h1{font-size:clamp(2rem,4vw,2.75rem);letter-spacing:-.035em}.theme-doc-markdown h2{margin-top:2.8rem;padding-bottom:.5rem;border-bottom:1px solid var(--ifm-color-emphasis-200)}.theme-doc-markdown h3{margin-top:2rem}.theme-doc-markdown img{border-radius:14px;box-shadow:0 10px 30px rgba(15,23,42,.08)}.theme-doc-markdown blockquote{border-left:4px solid var(--ifm-color-primary);border-radius:0 10px 10px 0;background:var(--ifm-color-emphasis-100)}.theme-doc-sidebar-container{border-right-color:var(--ifm-color-emphasis-200)!important}.menu__link{border-radius:9px}.menu__link--active{font-weight:850}.breadcrumbs__link{border-radius:8px}.pagination-nav__link{border-radius:16px;transition:.18s ease}.pagination-nav__link:hover{transform:translateY(-2px)}

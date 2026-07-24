@@ -1,5 +1,5 @@
 {
-  "name": "d-q-b-2-kairo-bashii-temp",
+  "name": "dqb2-kairo-bashii",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",
-    "@docusaurus/faster": "3.10.2",
     "@docusaurus/preset-classic": "3.10.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",

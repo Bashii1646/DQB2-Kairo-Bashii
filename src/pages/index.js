@@ -6,6 +6,10 @@ import styles from './index.module.css';
 
 const suisyaPages = [
   {
+    title: '水車の仕様',
+    to: '/suisya-waterwheel-spec',
+  },
+  {
     title: 'シンプルな保持回路',
     to: '/suisya-simple-latch',
   },
@@ -87,8 +91,11 @@ const magumaPages = [
     title: 'マグマエリアと水車のギミック',
     to: '/maguma-area-waterwheel',
   },
+  {
+    title: 'マグマエリアを利用した選択回路',
+    to: '/maguma-area-selector',
+  },
 ];
-
 function ArticleCard({title, to}) {
   return (
     <Link className={styles.articleCard} to={to}>
